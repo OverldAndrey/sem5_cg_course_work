@@ -1,0 +1,54 @@
+<div class="row no-gutters">
+  <div class="col"></div>
+  <div class="col" style="width: 1000px;">
+    <div class="w-100 px-3 mx-0 form-row w-100">
+      <div class="col">
+        <div class="form-group mb-0">
+          <label for="direction">Направление взгляда</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group mb-0">
+          <label for="xangle">Угол по X</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group mb-0">
+          <label for="yangle">Угол по Y</label>
+        </div>
+      </div>
+      <div class="col">
+        <label for="add-projector-btn"></label>
+      </div>
+      <div class="col">
+        <label for="set-test-panorama"></label>
+      </div>
+    </div>
+
+    <div class="w-100 px-3 mx-0 form-row w-100">
+      <div class="col">
+        <div class="form-group">
+          <input class="form-control pl-1" type="text" name="direction" id="direction" [(ngModel)]="direction" placeholder="x y z">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <input class="form-control" type="text" name="xangle" id="xangle" [(ngModel)]="xangle" placeholder="90">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <input class="form-control" type="text" name="yangle" id="yangle" [(ngModel)]="yangle" placeholder="90">
+        </div>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" role="button" (click)="addProjector()" id="add-projector-btn">Добавить камеру</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" role="button" (click)="setPanorama()" id="set-test-panorama">Тестовая панорама</button>
+      </div>
+    </div>
+    <div id="canvas-bed" class="mw-100"></div>
+  </div>
+  <div class="col"></div>
+</div>
